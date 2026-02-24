@@ -1,0 +1,31 @@
+# ==========================================================
+# StructuralFusion-IE — Experimental Requirements
+# Compatible with Python 3.10+
+# Tested on CPU environment.
+# For GPU acceleration, install the appropriate PyTorch
+# and CUDA version manually from https://pytorch.org
+# ==========================================================
+
+# Core Deep Learning Framework
+torch>=2.2.2
+
+# Graph Neural Network Utilities
+torch-geometric>=2.5.3
+
+# Scientific Computing
+numpy>=1.26.4
+scikit-learn>=1.4.2
+
+# Graph Processing
+networkx>=3.2.1
+
+# Data Visualization
+matplotlib>=3.8.4
+seaborn>=0.13.2
+
+# Data Processing & Parsing
+beautifulsoup4>=4.12.3
+lxml>=5.2.1
+
+# Utilities
+tqdm>=4.66.4
