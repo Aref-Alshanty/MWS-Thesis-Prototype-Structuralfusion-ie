@@ -4,7 +4,9 @@
 This artifact package contains all reproducible components associated with the StructuralFusion-IE prototype, as documented in the accompanying thesis:
 
 Structure-Aware Neural Information Extraction from Web Pages: A Text–DOM Fusion Prototype
+
 Aref Alshanty — aref_268862
+
 Syrian Virtual University , Web scinece master degree, 2026
 
 ## StructuralFusion-IE integrates:
@@ -47,11 +49,11 @@ pip install -r requirements.txt
 **Virtual Environment (Recommended)**
 
 For full reproducibility and to avoid dependency conflicts, create an isolated virtual environment:
-
+```
 python -m venv SFv1
 source SFv1/Scripts/activate    # Windows
 pip install -r requirements.txt
-
+```
 All experiments in this thesis were executed within a dedicated virtual environment to ensure controlled dependency management.
 
 ## 2. Dataset Requirements
@@ -85,16 +87,17 @@ The preprocessing pipeline includes:
 The artifact includes three models:
 
  1. Text-only Baseline
-    Transformer-based node text encoding without structural signals.
+    - Transformer-based node text encoding without structural signals.
  2. Structure-only Baseline
-    Graph Neural Network over DOM structure without textual embeddings.
+    - Graph Neural Network over DOM structure without textual embeddings.
  3. StructuralFusion Model (Proposed)
-    Text embedding (768-dim)
-    Structural embedding (256-dim)
-    2 Graph layers
-    4 attention heads
-    Fusion projection (1024 → 512)
-    Node-level classification head
+    - Text embedding (768-dim)
+    - Structural embedding (256-dim)
+    - 2 Graph layers
+    - 4 attention heads
+    - Fusion projection (1024 → 512)
+    - Node-level classification head
+    
 All models share identical training hyperparameters for fair comparison.
 
 
@@ -105,6 +108,7 @@ Run:
 main.ipynb
 ```
 Produces: everything on this prototype as a saved files on local storage
+
 Note: That processing large number of HTML pages might use more disk space
 
 # 6. Limitations
@@ -113,18 +117,10 @@ Note: That processing large number of HTML pages might use more disk space
  - Performance sensitive to HTML noise quality
  - Deeply nested DOM structures may reduce stability
 
-# 7. Citation
-@mastersthesis{ArefAlshanty2026StructuralFusionIE,
-  title={Structure-Aware Neural Information Extraction from Web Pages},
-  author={Aref Alshanty},
-  school={Syrian Virtual University},
-  year={2026}
-}
-# 8. Contact
+# 7. Contact
 
 For questions, checkpoints, or additional materials:
-
-**Aref Alshanty**
-***Email:*** aref_268862@svuonline.org
-***Institution:*** Syrian Virtual University
-***Year:*** 2026
+ - **Aref Alshanty**
+ - ***Email:*** aref_268862@svuonline.org
+ - ***Institution:*** Syrian Virtual University
+ - ***Year:*** 2026
